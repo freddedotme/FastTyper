@@ -1,0 +1,29 @@
+{
+  "name": "fasttyper",
+  "version": "1.0.0",
+  "description": "Websocket-based multiplayer typing game.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freddedotme/FastTyper.git"
+  },
+  "keywords": [
+    "websocket",
+    "typing",
+    "game"
+  ],
+  "author": "freddedotme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freddedotme/FastTyper/issues"
+  },
+  "homepage": "https://github.com/freddedotme/FastTyper#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "nodejs-websocket": "^1.7.1"
+  }
+}
