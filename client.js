@@ -2,10 +2,6 @@ var socket = new WebSocket('ws://localhost:8001');
 var init = true;
 var pid;
 
-socket.addEventListener('open', function (event){
-
-});
-
 socket.addEventListener('message', function (event){
   var word = document.getElementsByClassName('word')[0];
   var online = document.getElementsByClassName('online')[0];
@@ -27,8 +23,6 @@ socket.addEventListener('message', function (event){
     }
   }else{
     var data = JSON.parse(event.data);
-
-    console.log(data);
 
     word.innerHTML = data.word;
     online.innerHTML = data.online;
