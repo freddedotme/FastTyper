@@ -28,8 +28,6 @@ socket.addEventListener('message', function (event){
   }else{
     var data = JSON.parse(event.data);
 
-    console.log(data);
-
     word.innerHTML = data.word;
     online.innerHTML = data.online;
 
